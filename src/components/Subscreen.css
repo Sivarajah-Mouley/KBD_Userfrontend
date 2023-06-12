@@ -1,0 +1,43 @@
+.container-fluid {
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* width: fit-content; */
+    margin-top: 5%;
+    text-align: center;
+  border-width: 100%;
+ /* background: #16A085;  /* fallback for old browsers 
+background: -webkit-linear-gradient(to right, #F4D03F, #16A085);  /* Chrome 10-25, Safari 5.1-6 
+background: linear-gradient(to right, #F4D03F, #16A085); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  
+  }
+ 
+
+#para1{
+
+text-align: center;
+font-size: 25px;
+/* font-family: 'Courier New', monospace; */
+font-weight: bold;
+font-variant-caps: petite-caps;
+display: block;
+margin-top: 80px;
+margin-bottom: 50px;
+margin-left: 100px;
+
+}
+.SubscreenImg{
+    font-size: 60px;
+    font-family: 'Courier New', monospace;
+    border-bottom: 5px solid #ff7800;
+    border-top: 5px solid #ff7800;
+   padding-top: 15px;
+   padding-bottom: 15px;
+}
+
+.SubscreenImg span{
+    color: #ff7800;
+    font-family: 'Courier New', monospace;
+   
+}
