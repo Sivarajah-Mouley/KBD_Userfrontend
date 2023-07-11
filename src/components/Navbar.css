@@ -166,8 +166,8 @@ nav ul li span {
   background-color: var(--c);
   transform: translateY(140%);
   border-radius: 50%;
-  left: calc((var(--n) - 1) * 25%);
-  transition: 0.5s;
+  left: calc((var(--n) - 1) * 5%);
+  transition: 0.9s;
   transition-delay: calc((var(--n) - 1) * 0.1s);
   z-index: -1;
 }

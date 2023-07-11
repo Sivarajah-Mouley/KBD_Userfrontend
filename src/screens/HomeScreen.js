@@ -11,8 +11,9 @@ import FeaturedProducts from '../components/FeaturedProduct';
 import Product from '../components/Product'
 import About from '../components/About'
 
+
 import Subscreen from '../components/Subscreen';
-import Footer from '../components/Footer';
+//import Footer from '../components/Footer';
 //Actions
 import {getProducts as listProducts} from '../redux/actions/productActions'
 import {setUserDeatils} from '../redux/actions/userAction'
@@ -63,7 +64,7 @@ const HomeScreen = () => {
       <br></br>
 
            
-      {/* <div class="Category-Center">
+       <div class="Category-Center">
         <h2 className="homescreen__title">Select Product Category</h2>
 
         <select class="form-select" 
@@ -77,10 +78,10 @@ const HomeScreen = () => {
           <option value="House holds">House holds</option>
           <option value="Other">Others</option>
         </select>
-      </div>  */}
+      </div>  
       
       
-       {/* <div className="homescreen__products">
+       <div className="homescreen__products">
         {loading ? (
          <h3> <br/>Loading...</h3>
         ) : error ? (
@@ -99,7 +100,7 @@ const HomeScreen = () => {
             />
           ))
         )}
-      </div>  */}
+      </div> 
 
 
 
