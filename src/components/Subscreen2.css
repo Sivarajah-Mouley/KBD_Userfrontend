@@ -2,14 +2,14 @@
 
 .Subscreen2__title{
     font-size: 25rem;
-    color: #26bfbf;;
+    color: #318B9B;;
     line-height: 1.1;
    
     /* text-align: center; */
     font-family: 'Courier New', monospace;
     font-variant-caps: petite-caps;
-    border-bottom: 3px solid ;;
-    border-top: 3px solid #26bfbf;;
+    border-bottom: 3px solid #318B9B;;
+    border-top: 3px solid #318B9B;;
    
     padding: 2px;
     margin-top: 100px;
@@ -57,89 +57,69 @@
       color: #232027;
   } */
   
-  .wrapper {
-      width: 100%;
-      margin: 20px auto;
-  }
-  
+  div.gallery ul {
+    list-style-type:none;
+    margin-left: 1px;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    
+}
+
+
+
+
+
+/* Responsive hack */
+@media only screen and (min-width: 499px) and (max-width: 1212px) {
+    .wrapper {
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 498px) {
+    .wrapper {
+        width: 300px;
+    }
+
+    div.gallery ul {
+        list-style-type: none;
+        margin: 0;
+    }
+}
+
+*/
+
   div.gallery {
       margin-top: 20px;
   }
+   
   
-  div.gallery ul {
-      list-style-type:none;
-      margin-left: 1px;
-      position: relative;
-      justify-content: center;
-      display: flex;
-      
-  }
+
+
+
+ 
   
-  /* animation */
-  div.gallery ul li, div.gallery li img {
-      -webkit-transition: all 0.1s ease-in-out;
-        -moz-transition: all 0.1s ease-in-out;
-        -o-transition: all 0.1s ease-in-out;
-        transition: all 0.1s ease-in-out;
-  }
   
-  div.gallery ul li {
-      position: relative;
-      float: left;
-      width: 200px;
-      height: 250px;
-      margin: 0 8px 90px;
-      padding: 10px;
-      z-index: 0;
-  }
+
 
   
+ 
+ 
   
-  /* Make sure z-index is higher on hover */
-  /* Ensure that hover image overlapped the others */
-  div.gallery ul li:hover {
-      z-index: 4;
+ .gallery button {
+    background: #0af1f1;
+    color: #000;
+    border-radius: 5px;
+    width: 120px;
+    height: 50px;
   }
   
-  /* Image is position nicely under li */
-  div.gallery ul li img {
-      position: absolute;
-      left: 5;
-      top: 5;
-      border: 2px solid #26bfbf;
-      padding: 5px;
-      width: 209px;
-      height: 250px;
-      background: #ffffff;
-      box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
-
+ .gallery button:hover {
+    filter: brightness(1.1);
+    background: #26e6e6;
   }
   
-  div.gallery ul li img:hover {
-    width: 219px;
-    height: 260px;
-    /* margin: 200px; */
-      top: 20%;
-      left: 20%;
-      
-  }
-
   
   
-  /* Responsive hack */
-  @media only screen and (min-width: 499px) and (max-width: 1212px) {
-      .wrapper {
-          width: 500px;
-      }
-  }
   
-  @media only screen and (max-width: 498px) {
-      .wrapper {
-          width: 300px;
-      }
-  
-      div.gallery ul {
-          list-style-type: none;
-          margin: 0;
-      }
-  }

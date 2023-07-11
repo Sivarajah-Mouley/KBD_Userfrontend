@@ -26,30 +26,21 @@ const carousel = () => {
           
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active" >
-            <img src="./images/carousel1.jpg" class="d-block w-60" alt="..."/>
-            <div class="carousel-caption d-none d-md-block">
-              {/* <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p> */}
-            </div>
+        <div class="carousel-item active" >
+            <img src="./images/carousel1.jpg" class="d-block w-100" alt="..."   />
+            
           </div>
           <div class="carousel-item">
-            <img src="./images/carousel2.jpg" class="d-block w-100" alt="..."/>
-            <div class="carousel-caption d-none d-md-block">
-              
-            </div>
+            <img src="./images/carousel2.jpg" class="d-block w-100" alt="..." />
+            
           </div>
           <div class="carousel-item">
-            <img src="./images/carousel3.jpg" class="d-block w-100" alt="..."/>
-            <div class="carousel-caption d-none d-md-block">
-              
-            </div>
+            <img src="./images/carousel3.jpg" class="d-block w-100" alt="..."  />
+           
           </div>
           <div class="carousel-item">
-            <img src="./images/carousel4.jpg" class="d-block w-100" alt="..."/>
-            <div class="carousel-caption d-none d-md-block">
-              
-            </div>
+            <img src="./images/carousel4.jpg" class="d-block w-100" alt="..." />
+           
           </div>
           {/* <div class="carousel-item">
             <img src="./images/carousel5.jpg" class="d-block w-100" alt="..."/>
@@ -72,11 +63,12 @@ const carousel = () => {
           
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+         
+          <i class='fas fa-chevron-circle-left' style={{ fontSize: '48px', color: 'black' }}></i>
           <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <i class='fas fa-chevron-circle-right' style={{ fontSize: '48px', color: 'black' }}></i>
           <span class="visually-hidden">Next</span>
         </button>
       

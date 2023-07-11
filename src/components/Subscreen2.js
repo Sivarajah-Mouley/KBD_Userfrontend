@@ -1,42 +1,98 @@
 import React from "react";
 import "./Subscreen2.css";
+
 import { Link } from "react-router-dom";
+
+import {useEffect,useState} from 'react'
+import {useDispatch, useSelector} from 'react-redux'
+
+import Product from './Product'
+
+import {getProducts as listProducts} from '../redux/actions/productActions'
+import {setUserDeatils} from '../redux/actions/userAction'
+
 import baby from '../Img/baby.jpg'
 import food from '../Img/food.jpg'
 import holds from '../Img/holds.jpg'
 import medi from '../Img/medi.jpg'
 import others from '../Img/others.jpg'
-const Subscreen2 = () => {
-  return (
+const Subscreen2 = ({ imageUrl,description,  price, name, productId,Nprice }) => {
+	const dispatch = useDispatch()
+  const [userName, setUserName] = useState("")
+
+  const [catagory, setCatagory]= useState("")
+  const user = useSelector(state => state.user)
+  useEffect(() => {
+    setUserName(user.userInfo.details.fullName)
+    console.log(user);
+    
+  }, [user])
+
+  const getProducts = useSelector(state => state.getProducts)
+  const {products, loading, error} = getProducts
+
+  useEffect(() => {
+    dispatch(listProducts())
+  }, [dispatch])
+
+  useEffect(() => {
+    console.log(catagory);
+  }, [catagory])
+
+  useEffect(() => {
+    dispatch(setUserDeatils())
+  }, [dispatch])
+
+	return (
    
 
 <div class="container-fluid">
 	<div className="row">
 	
-	<div className="col-md-12">
- <div className="Subscreen2__title">
- <h3 className="product-category">Shop By Catagory</h3>
+		<div className="col-md-12">
+			<div className="Subscreen2__title">
+				<h3 className="product-category">Shop By Catagory</h3>
+			</div>
 
+			<div class="gallery">
+					
+					<ul>
+					<button><Link to="/babyproducts" >Baby Products</Link></button>
+						<button><Link to="/medicine" >Medicine</Link></button>
+						<button><Link to="/households" >House holds</Link></button>
+						<button><Link to="/foods" >Foods</Link></button>
+						<button><Link to="/others" >Others</Link></button>
+					</ul>
+				</div>
 
-    </div>
-   
-
-    <div class="wrapper">
-		<div class="gallery">
-			<ul>
-			
-				<li><Link to="/shop" ><img src={baby} alt="Baby Products" width="80" height="80" /></Link></li>
-				<li><Link to="/shop" ><img src={medi} alt="Medicine" width="80" height="80" /></Link></li>
-				<li><Link to="/shop" ><img src={holds} alt="House holds" width="80" height="80" /></Link></li>
-				<li><Link to="/shop" ><img src={food} alt="Foods" width="80" height="80" /></Link></li>
-				<li><Link to="/shop" ><img src={others} alt="Others" width="80" height="80" /></Link></li>
-				
-			</ul>
+			<div>
+			  <div className="homescreen__products">
+        {loading ? (
+         <h3> <br/>Loading...</h3>
+        ) : error ? (
+          <h2>{error}</h2>
+        ) : ((catagory? products.filter(product => product.catagory === catagory):products)
+        .map(product => (
+            <Product
+              key={product._id}
+              name={product.name}
+              description={product.description }
+              price={product.price}
+              
+              imageUrl={product.imageUrl}
+              productId={product._id}
+              Nprice={product.Nprice}
+            />
+          ))
+        )}
+      </div>  
 		</div>
-    </div>
-      
-</div>
-</div>
+			<div class="wrapper">
+				
+			</div>
+		
+		</div>
+	</div>
 </div>
 
 
