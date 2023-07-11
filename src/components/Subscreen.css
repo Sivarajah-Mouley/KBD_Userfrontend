@@ -1,43 +1,121 @@
-.container-fluid {
+.subscreen-container {
+  height: 100vh; /* Set the height as per your requirement */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
 
-    background-repeat: no-repeat;
-    background-position: center center;
-    /* width: fit-content; */
-    margin-top: 5%;
-    text-align: center;
-  border-width: 100%;
- /* background: #16A085;  /* fallback for old browsers 
-background: -webkit-linear-gradient(to right, #F4D03F, #16A085);  /* Chrome 10-25, Safari 5.1-6 
-background: linear-gradient(to right, #F4D03F, #16A085); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/* .custom-shape-divider-bottom-1688998911 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+} */
+.custom-shape-divider-bottom-1688998911 {
+  position: absolute;
+   top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotateY(180deg); /* Add this line */
+}
 
-  
+.custom-shape-divider-bottom-1688998911 svg {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 150px;
+}
+
+.custom-shape-divider-bottom-1688998911 .shape-fill {
+  fill: #26bfbf;
+}
+
+.subname {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  font-variant-caps: petite-caps;
+  display: flex;
+  padding: 20px;
+  margin-top: 150px; /* Adjust the margin as per your requirement */
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#h3 {
+  color: rgb(82, 79, 79);
+}
+
+.ring {
+  width: 300px;
+  height: 300px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.ring:nth-child(1) {
+  border-bottom: 8px solid rgb(240, 42, 230);
+  animation: rotate1 2s linear infinite;
+}
+
+@keyframes rotate1 {
+  from {
+    transform: rotateX(50deg) rotateZ(110deg);
   }
- 
 
-#para1{
-
-text-align: center;
-font-size: 25px;
-/* font-family: 'Courier New', monospace; */
-font-weight: bold;
-font-variant-caps: petite-caps;
-display: block;
-margin-top: 80px;
-margin-bottom: 50px;
-margin-left: 100px;
-
-}
-.SubscreenImg{
-    font-size: 60px;
-    font-family: 'Courier New', monospace;
-    border-bottom: 5px solid #ff7800;
-    border-top: 5px solid #ff7800;
-   padding-top: 15px;
-   padding-bottom: 15px;
+  to {
+    transform: rotateX(50deg) rotateZ(470deg);
+  }
 }
 
-.SubscreenImg span{
-    color: #ff7800;
-    font-family: 'Courier New', monospace;
-   
+.ring:nth-child(2) {
+  border-bottom: 8px solid rgb(240, 19, 67);
+  animation: rotate2 2s linear infinite;
+}
+
+@keyframes rotate2 {
+  from {
+    transform: rotateX(20deg) rotateY(50deg) rotateZ(20deg);
+  }
+
+  to {
+    transform: rotateX(20deg) rotateY(50deg) rotateZ(380deg);
+  }
+}
+
+.ring:nth-child(3) {
+  border-bottom: 8px solid rgb(3, 170, 170);
+  animation: rotate3 2s linear infinite;
+}
+
+@keyframes rotate3 {
+  from {
+    transform: rotateX(40deg) rotateY(130deg) rotateZ(450deg);
+  }
+
+  to {
+    transform: rotateX(40deg) rotateY(130deg) rotateZ(90deg);
+  }
+}
+
+.ring:nth-child(4) {
+  border-bottom: 8px solid rgb(207, 135, 1);
+  animation: rotate4 2s linear infinite;
+}
+
+@keyframes rotate4 {
+  from {
+    transform: rotateX(70deg) rotateZ(270deg);
+  }
+
+  to {
+    transform: rotateX(70deg) rotateZ(630deg);
+  }
 }

@@ -25,6 +25,7 @@ import {useDispatch} from 'react-redux'
 import {fetchCart} from './redux/actions/cartActions'
 import {setUserDeatils} from './redux/actions/userAction'
 
+
 function App() {
   const [sideToggle, setSideToggle] = useState(false)
   // fetchCart
@@ -38,7 +39,7 @@ function App() {
     <Router>
    
       <Navbar click={() => setSideToggle(true)} />
-      <Subscreen/>
+      
       <SideDrawer show={sideToggle} click={() => setSideToggle(false)} />
             <Backdrop show={sideToggle} click={() => setSideToggle(false)} />
       
@@ -60,6 +61,7 @@ function App() {
       
         <Footer/>
       </main>
+     
 
     </Router>
   )

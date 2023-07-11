@@ -9,14 +9,19 @@ const FeaturedProduct = () => {
   return (
    
 
-<div class="container">
- <div class="FeaturedProduct__title">
- <h3 class="product-topic">Featured Products</h3>
+<div class="container-fluid" id="feapd1">
+	<div className="row">
+	<div className="col-md-12">
+ 
+ <h3 className="product-topic">Featured Products</h3>
 
 
-    </div>
    
-
+	</div>
+	</div>
+      
+	<div className="row">
+	<div className="col-md-12">
     <div class="wrapper2">
 		<div class="gallery2">
 			<ul>
@@ -29,7 +34,11 @@ const FeaturedProduct = () => {
 		</div>
     </div>
       
+    </div>
+	</div>
+
 </div>
+
 
 
   );

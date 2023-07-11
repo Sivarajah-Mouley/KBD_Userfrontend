@@ -10,9 +10,12 @@ const Subscreen2 = () => {
   return (
    
 
-<div class="container">
- <div class="Subscreen2__title">
- <h3 class="product-category">Shop By Catagory</h3>
+<div class="container-fluid">
+	<div className="row">
+	
+	<div className="col-md-12">
+ <div className="Subscreen2__title">
+ <h3 className="product-category">Shop By Catagory</h3>
 
 
     </div>
@@ -32,6 +35,8 @@ const Subscreen2 = () => {
 		</div>
     </div>
       
+</div>
+</div>
 </div>
 
 

@@ -7,12 +7,12 @@ import Modal from 'react-bootstrap/Modal';
 import Subscreen2 from '../components/Subscreen2'
 import FeaturedProducts from '../components/FeaturedProduct';
 
-
-
 // Components
 import Product from '../components/Product'
 import About from '../components/About'
 
+import Subscreen from '../components/Subscreen';
+import Footer from '../components/Footer';
 //Actions
 import {getProducts as listProducts} from '../redux/actions/productActions'
 import {setUserDeatils} from '../redux/actions/userAction'
@@ -51,11 +51,15 @@ const HomeScreen = () => {
     <div className="homescreen">
       
 
-    
+        <Subscreen/>
       <Corousel/>
+      <FeaturedProducts/>
+      
       <Subscreen2/>
       <About/>
-      <FeaturedProducts/>
+    
+
+      
       <br></br>
 
            
