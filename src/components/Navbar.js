@@ -85,7 +85,7 @@ const Navbar = ({click}) => {
      <Link to="/" ><img src={logoImage} alt="Logo description" width="60" height="60" /></Link>
     </div>
           
-       <div class="Category-Center">
+       {/* <div class="Category-Center">
        
         <select class="form-select" 
         onChange={(e)=>{
@@ -98,7 +98,7 @@ const Navbar = ({click}) => {
           <option value="House holds">House holds</option>
           <option value="Other">Others</option>
         </select>
-      </div>
+      </div> */}
 
       <ul className="navbar__links">
         {/* <li>

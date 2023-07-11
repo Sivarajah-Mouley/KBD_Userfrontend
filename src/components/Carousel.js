@@ -7,9 +7,11 @@ const carousel = () => {
     return(
      
         
-       <div className="bg"  style={{ backgroundImage: `url(${img})` , margin:'-8px 0 0 0 ' }}>
-       <div class="Container" id="bg1" >
+     
+       <div class="Container-fluid" >
         
+         <div className="row">
+        <div className="col-md-12">
 
 
     <div id="carouselExampleCaptions" class="carousel slide"  data-bs-ride="carousel">
@@ -80,7 +82,10 @@ const carousel = () => {
       
     </div>
     </div>
-   </div>
+
+    </div>
+    </div>
+ 
     
     )
 }
