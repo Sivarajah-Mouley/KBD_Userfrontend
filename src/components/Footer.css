@@ -7,7 +7,7 @@
 section {
   width: 100%;
   display: inline-block;
-  background: #ff7800;
+  background:#26bfbf;
   height: 2vh;
   text-align: center;
   font-size: 15px;
@@ -75,7 +75,7 @@ ul {
 }
 
 .footer-logo h3 {
-  color: #ff7800;
+  color:#26bfbf;
   font: normal 36px 'Open Sans', cursive;
   margin: 0;
 }
@@ -88,7 +88,7 @@ ul {
 }
 
 .footer-social-icon span {
-  color: #ff7800;
+  color: #26bfbf;
   display: block;
   font-size: 20px;
   font-weight: 700;
@@ -119,11 +119,11 @@ ul {
 }
 
 .google-bg {
-  background: #ff7800;
+  background: #26bfbf;
 }
 
 .footer-widget-heading h3 {
-  color: #ff7800;
+  color:#26bfbf;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 40px;
@@ -148,7 +148,7 @@ ul {
 }
 
 .footer-widget ul li a:hover {
-  color: #ff7800;
+  color:#26bfbf;
 }
 
 .footer-widget ul li a {
@@ -173,7 +173,7 @@ ul {
 .subscribe-form button {
   position: absolute;
   right: 0;
-  background: #ff7800;
+  background:#26bfbf;
   padding: 13px 20px;
   border: 1px solid #1f442e;
   top: 0;
