@@ -1,6 +1,9 @@
 import React from "react";
 import "./Subscreen.css";
-import bgImage from './bgscreen.jpg';
+
+
+
+
 
 const Subscreen = () => {
   return (

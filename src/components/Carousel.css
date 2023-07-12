@@ -4,6 +4,7 @@
 } 
 
 .carousel-item img {
+  margin-top: 10px;
   width: auto; /* Remove the fixed width */
   height: auto; /* Remove the fixed height */
   max-height: 100%; /* Set the max-height to 100% to fit within the carousel */
