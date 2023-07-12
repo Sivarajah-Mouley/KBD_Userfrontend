@@ -28,7 +28,7 @@ const ProductScreen = ({match, history}) => {
   const addToCartHandler = () => {
     if (user.userInfo.isLogin) {
       dispatch(addToCart(product._id, qty))
-      history.push(`/cart`)
+      history.push('/cart')
       return
     } else {
       alert('You need to first login.')
@@ -45,7 +45,7 @@ const ProductScreen = ({match, history}) => {
       ) : (
         <>
           <div className="productscreen__left">
-            <div className="card">
+            <div className="left__image">
               <img src={product.imageUrl} alt={product.name} />
             </div>
             <div className="left__info">

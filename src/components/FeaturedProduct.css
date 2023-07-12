@@ -1,29 +1,28 @@
 #feapd1{
 
-
-
     margin-top: 60px;
 }
 
   .product-topic {
-    font-size: 2rem;
+    font-size: 35px;
     text-align: center;
    
-    color: #1b1b1a;
+    color: #3684a6;
     line-height: 1.1;
     margin: 20px 40px 20px;
     /* text-align: center; */
     font-family: 'Courier New', monospace;
     font-variant-caps: petite-caps;
-    border-bottom: 3px solid #26bfbf;
-    border-top: 3px solid #26bfbf;
+    border-bottom: 3px solid #3684a6;
+    border-top: 3px solid #3684a6;
    
     padding: 2px;
-   justify-content: center;
+    justify-content: center;
   }
   
-  
-  
+ 
+
+
   @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:700);
 
  

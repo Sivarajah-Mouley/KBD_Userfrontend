@@ -1,0 +1,46 @@
+.Category-Center {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .homescreen__title {
+    font-size: 24px;
+    color: #1f5761;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  .form-select {
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 16px;
+    border: 2px solid #333;
+    border-radius: 20px;
+    outline: none;
+    width: 220px;
+    height: 35px;
+    background-color: #f7f7f7;
+    color: #555555d8;
+    box-shadow: 0 2px 4px #0000001a;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .form-select:focus {
+    border-color: #25a3e2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .form-select option {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .form-select option:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .form-select option:selected {
+    background-color: #25a3e2;
+    color: #fff;
+  }
+  

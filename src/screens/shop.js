@@ -1,10 +1,11 @@
 import './HomeScreen.css'
 import {useEffect,useState} from 'react'
 import {useDispatch, useSelector} from 'react-redux'
-import Producthard from '../components/Producthard'
+//import Producthard from '../components/Producthard'
 import Corosal from "../components/Carousel"
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import './shop.css'
 
 // Components
 import Product from '../components/Product'
@@ -57,7 +58,7 @@ const HomeScreen = () => {
       setCatagory(e.target.value)
       console.log(catagory)
     }}>
-      <option selected>Open this select menu</option>
+      <option selected>Select one...</option>
       <option value="Baby Products">Baby Products</option>
       <option value="Medicine">Medicine</option>
       <option value="House holds">House holds</option>
