@@ -11,11 +11,11 @@ import Product from './Product'
 import {getProducts as listProducts} from '../redux/actions/productActions'
 import {setUserDeatils} from '../redux/actions/userAction'
 
-import baby from '../Img/baby.jpg'
-import food from '../Img/food.jpg'
-import holds from '../Img/holds.jpg'
-import medi from '../Img/medi.jpg'
-import others from '../Img/others.jpg'
+// import baby from '../Img/baby.jpg'
+// import food from '../Img/food.jpg'
+// import holds from '../Img/holds.jpg'
+// import medi from '../Img/medi.jpg'
+// import others from '../Img/others.jpg'
 const Subscreen2 = ({ imageUrl,description,  price, name, productId,Nprice }) => {
 	const dispatch = useDispatch()
   const [userName, setUserName] = useState("")
@@ -54,14 +54,14 @@ const Subscreen2 = ({ imageUrl,description,  price, name, productId,Nprice }) =>
 				<h3 className="product-category">Shop By Catagory</h3>
 			</div>
 
-			<div class="gallery">
+			<div class="catogorize">
 					
 					<ul>
-					<button><Link to="/babyproducts" >Baby Products</Link></button>
-						<button><Link to="/medicine" >Medicine</Link></button>
-						<button><Link to="/households" >House holds</Link></button>
-						<button><Link to="/foods" >Foods</Link></button>
-						<button><Link to="/others" >Others</Link></button>
+					<button ><Link to="/babyproducts" style={{ color: '#000' }}>Baby Products</Link></button>
+						<button><Link to="/medicine" style={{ color: '#000' }} >Medicine</Link></button>
+						<button><Link to="/households" style={{ color: '#000' }} >House holds</Link></button>
+						<button><Link to="/foods" style={{ color: '#000' }}>Foods</Link></button>
+						<button><Link to="/others" style={{ color: '#000' }}>Others</Link></button>
 					</ul>
 				</div>
 
@@ -88,7 +88,7 @@ const Subscreen2 = ({ imageUrl,description,  price, name, productId,Nprice }) =>
       </div>  
 		</div>
 			<div class="wrapper">
-				
+      <button><Link to="/shop"  style={{ color: '#000' }}>See more</Link></button>
 			</div>
 		
 		</div>

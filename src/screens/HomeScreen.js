@@ -61,46 +61,12 @@ const HomeScreen = () => {
     
 
       
-      <br></br>
-
+      
            
-       <div class="Category-Center">
-        <h2 className="homescreen__title">Select Product Category</h2>
-
-        <select class="form-select" 
-        onChange={(e)=>{
-          setCatagory(e.target.value)
-          console.log(catagory)
-        }}>
-          <option selected>Open this select menu</option>
-          <option value="Baby Products">Baby Products</option>
-          <option value="Medicine">Medicine</option>
-          <option value="House holds">House holds</option>
-          <option value="Other">Others</option>
-        </select>
-      </div>  
+       
       
       
-       <div className="homescreen__products">
-        {loading ? (
-         <h3> <br/>Loading...</h3>
-        ) : error ? (
-          <h2>{error}</h2>
-        ) : ((catagory? products.filter(product => product.catagory === catagory):products)
-        .map(product => (
-            <Product
-              key={product._id}
-              name={product.name}
-              description={product.description}
-              price={product.price}
-              
-              imageUrl={product.imageUrl}
-              productId={product._id}
-              Nprice={product.Nprice}
-            />
-          ))
-        )}
-      </div> 
+       
 
 
 

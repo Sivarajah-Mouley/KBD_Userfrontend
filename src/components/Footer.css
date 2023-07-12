@@ -7,13 +7,13 @@
 section {
   width: 100%;
   display: inline-block;
-  background: #ff7800;
+  background: #26bfbf;
   height: 2vh;
   text-align: center;
   font-size: 15px;
   font-weight: 700;
   text-decoration: underline;
-  margin-bottom: -89px;
+  margin-bottom: -35px;
 }
 
 ul {
@@ -22,10 +22,10 @@ ul {
 }
 
 .footer-section {
-  background: #000;
+  background: #000000b4;
   position: relative;
-  margin-top: 84px;
-  padding: 50px 0;
+  margin-top: 30px;
+  padding: 30px 0;
 }
 
 .footer-cta {
@@ -75,7 +75,7 @@ ul {
 }
 
 .footer-logo h3 {
-  color: #ff7800;
+  color: #26bfbfbe;
   font: normal 36px 'Open Sans', cursive;
   margin: 0;
 }
@@ -88,7 +88,7 @@ ul {
 }
 
 .footer-social-icon span {
-  color: #ff7800;
+  color: #26bfbf;
   display: block;
   font-size: 20px;
   font-weight: 700;
@@ -97,7 +97,7 @@ ul {
 }
 
 .footer-social-icon a {
-  color: #000000;
+  color: #fdfbfb;
   font-size: 16px;
   margin-right: 15px;
 }
@@ -119,11 +119,11 @@ ul {
 }
 
 .google-bg {
-  background: #ff7800;
+  background: #26bfbf;
 }
 
 .footer-widget-heading h3 {
-  color: #ff7800;
+  color: #26bfbf;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 40px;
@@ -148,7 +148,7 @@ ul {
 }
 
 .footer-widget ul li a:hover {
-  color: #ff7800;
+  color: #26bfbf;
 }
 
 .footer-widget ul li a {
@@ -173,7 +173,7 @@ ul {
 .subscribe-form button {
   position: absolute;
   right: 0;
-  background: #ff7800;
+  background: #26bfbf;
   padding: 13px 20px;
   border: 1px solid #1f442e;
   top: 0;
@@ -187,7 +187,7 @@ ul {
 
 .footer-menu {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .footer-menu li {
@@ -196,7 +196,7 @@ ul {
 }
 
 .footer-menu li:hover a {
-  color: #02fd66;
+  color: #26bfbf;
 }
 
 .footer-menu li a {

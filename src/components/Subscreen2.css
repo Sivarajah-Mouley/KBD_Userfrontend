@@ -1,18 +1,18 @@
 
 
 .Subscreen2__title{
-    font-size: 25rem;
-    color: #318B9B;;
+   
+    color: #3684a6;
     line-height: 1.1;
    
     /* text-align: center; */
     font-family: 'Courier New', monospace;
     font-variant-caps: petite-caps;
-    border-bottom: 3px solid #318B9B;;
-    border-top: 3px solid #318B9B;;
+    border-bottom: 3px solid #3684a6;
+    border-top: 3px solid #3684a6;
    
     padding: 2px;
-    margin-top: 100px;
+    margin-top: 10px;
     
     
 
@@ -22,7 +22,18 @@
     font-size: 2rem;
     text-align: center;
   }
-  
+
+  .catogorize {
+    font-size: 15px;
+   
+    text-align: center;
+  }
+
+  .wrapper {
+    font-size: 15px;
+   margin-top: 50px;
+    text-align: center;
+  }
 
   /* .Subscreen2__title::before {
     content: "";
@@ -57,14 +68,14 @@
       color: #232027;
   } */
   
-  div.gallery ul {
+  /* div.gallery ul {
     list-style-type:none;
     margin-left: 1px;
     position: relative;
     justify-content: center;
     display: flex;
     
-}
+} */
 
 
 
@@ -85,41 +96,91 @@
     div.gallery ul {
         list-style-type: none;
         margin: 0;
+        
     }
 }
 
 */
 
-  div.gallery {
-      margin-top: 20px;
-  }
+div.gallery {
+    margin-top: 20px;
+    
+
+}
    
-  
 
+  /* html,body{
+    height:100%;
+  }
+  body{
+    text-align:center;
+  }
+  body:before{
+    content:'';
+    height:100%;
+    display:inline-block;
+    vertical-align:middle;
+  } */
+  .col-md-12 .catogorize ul button,
+  .col-md-12 .wrapper button {
+    background: #b4b4b444;
 
-
- 
-  
-  
-
-
-  
- 
- 
-  
- .gallery button {
-    background: #0af1f1;
-    color: #000;
-    border-radius: 5px;
-    width: 120px;
-    height: 50px;
+    border: none;
+    border-radius: 10px;
+    padding-inline: 15px;
+    padding-top: 2px;
+    padding-bottom: 2px; 
+    position: relative;
+    font-size: 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: 800ms ease all;
+    outline: none;
   }
   
- .gallery button:hover {
-    filter: brightness(1.1);
-    background: #26e6e6;
+  .col-md-12 .catogorize ul button:hover,
+  .col-md-12 .wrapper button:hover {
+    background: #26bfbf;
+    border-radius: 7px;
+   
+    padding-right: 20px;
+    padding-left: 20px; 
+   
+    padding-inline: 20px;
+   
   }
   
+  .col-md-12 .catogorize ul button:before,
+  .col-md-12 .catogorize ul button:after,
+  .col-md-12 .wrapper button:before,
+  .col-md-12 .wrapper button:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 1.5px;
+    width: 0;
+    background: #000000;
+    transition: 400ms ease all;
+  }
   
+  .col-md-12 .catogorize ul button:after,
+  .col-md-12 .wrapper button:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+  }
   
+  .col-md-12 .catogorize ul button:hover:before,
+  .col-md-12 .catogorize ul button:hover:after,
+  .col-md-12 .wrapper  button:hover:before,
+  .col-md-12 .wrapper button:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+  }
+  
+
+  
+
   

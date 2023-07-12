@@ -4,35 +4,41 @@
   justify-content: center;
   align-items: center;
   position: relative;
+ 
 }
 
-/* .custom-shape-divider-bottom-1688998911 {
+.custom-shape-divider-bottom-1688998911 {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   overflow: hidden;
   line-height: 0;
-} */
-.custom-shape-divider-bottom-1688998911 {
+  transform: rotate(180deg);
+}
+
+/* .custom-shape-divider-bottom-1688998911 {
   position: absolute;
-   top: 0;
+   bottom: 0;
   left: 0;
   width: 100%;
   overflow: hidden;
   line-height: 0;
-  transform: rotateY(180deg); /* Add this line */
-}
+  transform: rotateY(180deg); 
+
+} */
 
 .custom-shape-divider-bottom-1688998911 svg {
   position: relative;
   display: block;
   width: 100%;
   height: 150px;
+ 
 }
 
 .custom-shape-divider-bottom-1688998911 .shape-fill {
-  fill: #26bfbf;
+  fill: #238496;
+  
 }
 
 .subname {
@@ -42,14 +48,17 @@
   font-variant-caps: petite-caps;
   display: flex;
   padding: 20px;
-  margin-top: 150px; /* Adjust the margin as per your requirement */
+  margin-top: 400px;
+  margin-bottom: 400px;
   justify-content: center;
   align-items: center;
   position: relative;
 }
 
 #h3 {
-  color: rgb(82, 79, 79);
+  color: rgb(71, 70, 70);
+  line-height: 1.0; 
+  
 }
 
 .ring {

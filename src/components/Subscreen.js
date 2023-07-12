@@ -7,7 +7,16 @@ const Subscreen = () => {
     <div className="container-fluid subscreen-container">
       <div className="row">
         <div className="col-md-12">
-          <div className="custom-shape-divider-bottom-1688998911">
+        <div className="subsbg">
+            <div className="subname">
+              <div className="ring"></div>
+              <div className="ring"></div>
+              <div className="ring"></div>
+              <div className="ring"></div>
+              <div id="h3">K.Bagesh<br />Distributors</div>
+            </div>
+          </div>
+        <div className="custom-shape-divider-bottom-1688998911">
             <svg
               data-name="Layer 1"
               xmlns="http://www.w3.org/2000/svg"
@@ -30,15 +39,7 @@ const Subscreen = () => {
               ></path>
             </svg>
           </div>
-          <div className="subsbg">
-            <div className="subname">
-              <div className="ring"></div>
-              <div className="ring"></div>
-              <div className="ring"></div>
-              <div className="ring"></div>
-              <div id="h3">K.Bagesh<br />Distributors</div>
-            </div>
-          </div>
+          
         </div>
       </div>
     </div>

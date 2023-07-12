@@ -18,6 +18,7 @@ const Footer = () => {
                     <a href="#"><i className="fab fa-google-plus-g google-bg"></i></a>  
                   </div>
                   <div className="footer-social-icon">
+                  
                     <h4><span>Contact Us</span></h4>
                     <ul>
                       <li>
@@ -40,7 +41,7 @@ const Footer = () => {
                   </div>
                   <ul>
                     <li>
-                      <Link to="/category">Category</Link>
+                      <Link to="/babyproducts">Category</Link>
                     </li>
                     <li>
                       <Link to="/shop">Products</Link>
