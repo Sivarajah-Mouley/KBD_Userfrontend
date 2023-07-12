@@ -2,7 +2,7 @@
 
 :root {
   /* Colors */
-  --brand-color: #246b8f;
+  --brand-color: #26bfbf;
   --black: hsl(0, 0%, 0%);
   --white: hsl(0, 0%, 100%);
   /* Fonts */
@@ -81,13 +81,13 @@ p {
   flex-direction: column;
   justify-content: space-between;
   align-self: flex-end;
-  height: 55%;
+  height: 60%;
   padding: 12% 1.25rem 1.875rem;
   background: linear-gradient(
     180deg,
-    hwb(0 0% 100% / 0) 0%,
-    hsla(0, 0%, 0%, 0.3) 10%,
-    hsl(0, 0%, 0%) 100%
+    hwb(0 33% 67% / 0) 0%,
+    hsla(0, 0%, 78%, 0.466) 10%,
+    #000000 100%
   );
 }
 
@@ -117,19 +117,7 @@ p {
   background-color: var(--brand-color);
 }
 
-.card__button {
-  padding: 0.75em 1.6em;
-  width: fit-content;
-  width: -moz-fit-content; /* Prefijo necesario para Firefox  */
-  font-variant: small-caps;
-  font-weight: bold;
-  border-radius: 0.45em;
-  border: none;
-  background-color: var(--brand-color);
-  font-family: var(--font-title);
-  font-size: 1.125rem;
-  color: var(--black);
-}
+
 
 .card__button:focus {
   outline: 2px solid black;
@@ -138,7 +126,7 @@ p {
 
 @media (any-hover: hover) and (any-pointer: fine) {
   .card__content {
-    transform: translateY(62%);
+    transform: translateY(52%);
     transition: transform 500ms ease-out;
     transition-delay: 500ms;
   }

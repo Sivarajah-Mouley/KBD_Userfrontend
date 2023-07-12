@@ -18,11 +18,11 @@
 }
 .cartItem__name {
   text-decoration: none;
-  color: #595252;
+  color: #000000;
 }
 
 .cartItem__name:hover {
-  color: #dd219e;
+  color: #126a85;
 }
 
 .cartItem__select {

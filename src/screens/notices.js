@@ -20,7 +20,7 @@ function Notice() {
     }, [])
   return (
     <div className='col-10 mx-auto m-2' style={{height:"1000px"}}>
-      <div class="p-3 mb-2  text-white text-center col-6 border rounded mx-auto" style={{ backgroundColor: "#ff7800", fontSize:'20px',fontFamily:'open sans' }} >
+      <div class="p-3 mb-2  text-white text-center col-6 border rounded mx-auto" style={{ backgroundColor: "#26bfbf", fontSize:'20px',fontFamily:'open sans' }} >
         Flash Deals</div>
         {users.length > 0 && (
         <ul>

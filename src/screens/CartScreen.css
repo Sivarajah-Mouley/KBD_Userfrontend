@@ -57,6 +57,7 @@
 
 .cartscreen__info p {
   padding: 8px;
+  color: #171717;
 }
 
 .cartscreen__info p:first-child {
