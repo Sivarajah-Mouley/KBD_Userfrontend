@@ -47,10 +47,10 @@ const HomeScreen = () => {
 
 
        
-   <div class="Category-Center">
+   <div className="Category-Center">
     <h2 className="homescreen__title">Select Product Category</h2>
 
-    <select class="form-select" 
+    <select className="form-select" 
     onChange={(e)=>{
       setCatagory(e.target.value)
       console.log(catagory)

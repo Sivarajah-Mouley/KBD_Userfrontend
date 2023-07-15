@@ -1,5 +1,5 @@
 .subscreen-container {
-  height: 100vh; /* Set the height as per your requirement */
+  height: 100vh; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,8 +7,8 @@
   
 
   background-image: url('../Img/R.jpg');
-    background-size: cover; /* Adjust the image size to cover the container */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-size: cover; 
+    background-repeat: no-repeat; 
 ;
 
  
@@ -24,16 +24,7 @@
   transform: rotate(180deg);
 }
 
-/* .custom-shape-divider-bottom-1688998911 {
-  position: absolute;
-   bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotateY(180deg); 
 
-} */
 
 .custom-shape-divider-bottom-1688998911 svg {
   position: relative;

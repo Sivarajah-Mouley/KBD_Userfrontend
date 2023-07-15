@@ -1,6 +1,6 @@
-.signinscreen input[type='text'],
-input[type='email'],
-input[type='password'],
+.signinscreen input[type="text"],
+input[type="email"],
+input[type="password"],
 select,
 textarea {
   width: 100%;
@@ -13,17 +13,17 @@ textarea {
   resize: vertical;
 }
 
-.signinscreen input[type='submit'] {
-  background-color: #cafbe3; /* Updated color */
+.signinscreen input[type="submit"] {
+  background-color: #cafbe3;
   color: rgb(11, 7, 7);
   padding: 12px 20px;
-  border: 2px solid #5e6867; /* Updated color */
+  border: 2px solid #5e6867; 
   border-radius: 4px;
   cursor: pointer;
   margin-top: 20px;
 }
 
-.signinscreen input[type='submit']:hover {
+.signinscreen input[type="submit"]:hover {
   background-color: #b8b7b7;
 }
 
@@ -90,7 +90,7 @@ textarea {
 
 .btn.btn-outline-danger {
   color: #000000;
-  background-color: #fff9bb; /* Updated color */
+  background-color: #fff9bb; 
   border-color: #000000;
   max-height: 42px;
   max-width: 85px;

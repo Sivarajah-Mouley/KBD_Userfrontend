@@ -1,5 +1,7 @@
+
+
 const devConfig = {
-  baseURL: 'http://localhost:5000',
+  baseURL: process.env.BASE_URL || 'http://localhost:5000',
 }
 
 const prodConfig = {

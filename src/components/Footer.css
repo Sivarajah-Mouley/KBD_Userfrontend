@@ -204,7 +204,6 @@ ul {
   color: #f1f1f1;
 }
 
-/* Additional styles for responsiveness */
 @media (max-width: 768px) {
   .footer-widget {
     text-align: center;

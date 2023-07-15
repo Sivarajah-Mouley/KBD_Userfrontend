@@ -10,7 +10,7 @@
     color: #3684a6;
     line-height: 1.1;
     margin: 20px 40px 20px;
-    /* text-align: center; */
+
     font-family: 'Courier New', monospace;
     font-variant-caps: petite-caps;
     border-bottom: 3px solid #3684a6;
@@ -50,7 +50,7 @@
       
   }
   
-  /* animation */
+
   div.gallery2 ul li, div.gallery2 li img {
       -webkit-transition: all 0.1s ease-in-out;
         -moz-transition: all 0.1s ease-in-out;
@@ -70,13 +70,12 @@
 
   
   
-  /* Make sure z-index is higher on hover */
-  /* Ensure that hover image overlapped the others */
+
   div.gallery2 ul li:hover {
       z-index: 2;
   }
   
-  /* Image is position nicely under li */
+
   div.gallery2 ul li img {
       position: absolute;
       left: 5;
@@ -93,7 +92,7 @@
   div.gallery2 ul li img:hover {
     width: 215px;
     height: 258px;
-    /* margin: 200px; */
+
       top: 20%;
       left: 15%;
       
@@ -101,7 +100,7 @@
 
   
   
-  /* Responsive hack */
+
   @media only screen and (min-width: 499px) and (max-width: 1212px) {
       .wrapper2 {
           width: 500px;

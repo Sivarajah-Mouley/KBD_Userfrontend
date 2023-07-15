@@ -39,14 +39,20 @@ const CartScreen = () => {
       .toFixed(2)
   }
 
-  if (loginInfo.loading) return <h1>Loading.....</h1>
+   if (loginInfo.loading) {
+    
+    return(
+      loginInfo.isLogin ? <h1>Loading...</h1> : <h1>Not Login.! please login</h1>
+    )
+  
+  }
   else if (!loginInfo.loading && loginInfo.isLogin)
     return (
       <>
         <div className="cartscreen">
           <div className="cartscreen__left">
           
-            <h2 class="p-3 mb-2  text-white text-center col-6 border rounded mx-auto" style={{ backgroundColor: "#26bfbf", fontSize:'20px'}}>Shopping Cart</h2>
+            <h2 className="p-3 mb-2  text-white text-center col-6 border rounded mx-auto" style={{ backgroundColor: "#26bfbf", fontSize:'20px'}}>Shopping Cart</h2>
 
             {cartItems.length === 0 ? (
               <div>

@@ -45,7 +45,7 @@ const HomeScreen = () => {
     
     <div className="homescreen">
       
-      <div class="p-3 mb-2  text-white text-center col-6 border rounded mx-auto" style={{ backgroundColor: "#15172b", fontSize:'20px' }}  >Medicine</div>
+      <div className="p-3 mb-2  text-white text-center col-6 border rounded mx-auto" style={{ backgroundColor: "#15172b", fontSize:'20px' }}  >Medicine</div>
       <div className="homescreen__products">
         {loading ? (
           <h2>Loading...</h2>
