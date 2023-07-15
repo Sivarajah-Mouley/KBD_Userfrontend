@@ -46,7 +46,7 @@ const Subscreen2 = ({ imageUrl,description,  price, name, productId,Nprice }) =>
 	return (
    
 
-<div class="container-fluid">
+<div className="container-fluid">
 	<div className="row">
 	
 		<div className="col-md-12">
@@ -54,7 +54,7 @@ const Subscreen2 = ({ imageUrl,description,  price, name, productId,Nprice }) =>
 				<h3 className="product-category">Shop By Catagory</h3>
 			</div>
 
-			<div class="catogorize">
+			<div className="catogorize">
 					
 					<ul>
 					<button ><Link to="/babyproducts" style={{ color: '#000' }}>Baby Products</Link></button>
@@ -87,7 +87,7 @@ const Subscreen2 = ({ imageUrl,description,  price, name, productId,Nprice }) =>
         )}
       </div>  
 		</div>
-			<div class="wrapper">
+			<div className="wrapper">
       <button><Link to="/shop"  style={{ color: '#000' }}>See more</Link></button>
 			</div>
 		

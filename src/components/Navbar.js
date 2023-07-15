@@ -141,7 +141,7 @@ const Navbar = ({click}) => {
           <li>
             <Link to="/signin" className='bgcolorchange' >
         {/* Sign in  &nbsp;&nbsp;&nbsp; */}
-           <i class="fas fa-user"></i>
+           <i className="fas fa-user"></i>
            <span></span><span></span><span></span><span></span>
            </Link>
           </li>
@@ -154,7 +154,7 @@ const Navbar = ({click}) => {
 
             <Link to="/" onClick={_handleLogout} className='bgcolorchange' >
         {/* Sign out &nbsp;&nbsp;&nbsp; */}
-        <i class="fas fa-sign-out-alt"></i>
+        <i className="fas fa-sign-out-alt"></i>
            <span></span><span></span><span></span><span></span>
            </Link>
 

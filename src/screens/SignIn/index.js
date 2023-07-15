@@ -45,7 +45,7 @@ function Index() {
             }}
           >
 
-            <p class="text-success" style={{ marginLeft:"0px"}}>Login</p>
+            <p className="text-success" style={{ marginLeft:"0px"}}>Login</p>
           </div>
 
           <label for="email">Email</label>
@@ -77,7 +77,7 @@ function Index() {
           <input type="submit" value="Sign in" onClick={_handleSubmit} />
           <span style={{ cursor: "pointer" }} onClick={() => push("/")}>
          
-              <button type="button" class="btn btn-outline-danger" style={{ height:"47px" , width:"100px" , marginLeft:"20px"}}>Back</button>
+              <button type="button" className="btn btn-outline-danger" style={{ height:"47px" , width:"100px" , marginLeft:"20px"}}>Back</button>
               
             </span>
             

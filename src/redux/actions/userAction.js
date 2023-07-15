@@ -2,6 +2,13 @@ import {Api} from '../../utils/Api'
 import * as actionTypes from '../constants/userContants'
 
 export const setUserDeatils = () => async dispatch => {
+  if(!localStorage.getItem('E_COMMERCE_TOKEN')) {
+    dispatch({
+      type: actionTypes.SET_INITIAL_STATE,
+    })
+    return
+  }
+
   const {statusCode, data} = await Api.getRequest(`/api/user/me`)
   // console.log({statusCode, data})
   if (statusCode === 400 || statusCode === 500) {

@@ -42,7 +42,7 @@ const FeaturedProduct = () => {
   return (
    
 
-<div class="container-fluid" id="feapd1">
+<div className="container-fluid" id="feapd1">
 	<div className="row">
 	<div className="col-md-12">
  
@@ -74,7 +74,7 @@ const FeaturedProduct = () => {
           ))
         )}
       </div>
-    <div class="wrapper2">
+    <div className="wrapper2">
 	
     </div>
       

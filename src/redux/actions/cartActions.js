@@ -19,7 +19,7 @@ export const addToCart = (id, qty) => async dispatch => {
     },
   })
 
-  Api.postRequest('/api/cart', {productId: id, count: qty})
+  if(localStorage.getItem('E_COMMERCE_TOKEN'))  Api.postRequest('/api/cart', {productId: id, count: qty})
 }
 
 export const removeFromCart =
@@ -29,22 +29,28 @@ export const removeFromCart =
       type: actionTypes.REMOVE_FROM_CART,
       payload: pId,
     })
-    Api.DeleteRequest('/api/cart/' + _id)
+    if(_id) Api.DeleteRequest('/api/cart/' + _id)
+    
   }
 
 export const fetchCart = () => async dispatch => {
   try {
-    const {data: strigifyData} = await Api.getRequest(`/api/cart/`)
-    // console.log({strigifyData})
-    const {carts} = JSON.parse(strigifyData)
-    // console.log(carts)
+    
+    if(localStorage.getItem('E_COMMERCE_TOKEN')) {
 
-    dispatch({
-      type: actionTypes.FETCH_MY_CART,
-      payload: {
-        carts: convertToCartData(carts),
-      },
-    })
+      const {data: strigifyData} = await Api.getRequest(`/api/cart/`)
+      // console.log({strigifyData})
+      const {carts} = JSON.parse(strigifyData)
+      // console.log(carts)
+  
+      dispatch({
+        type: actionTypes.FETCH_MY_CART,
+        payload: {
+          carts: convertToCartData(carts),
+        },
+      })
+    }
+
   } catch (e) {
     console.log('EROROR :  ', e)
   }
