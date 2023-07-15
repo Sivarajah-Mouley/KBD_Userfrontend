@@ -6,12 +6,12 @@ import Modal from 'react-bootstrap/Modal';
 import {useMemo,useState,useEffect} from 'react'
 import {logout} from '../utils/localstorage'
 import {setInitialState} from '../redux/actions/userAction'
-
+import { config } from '../utils/config';
 import logoImage from './logoo.png'
 
 const Navbar = ({click}) => {
   useEffect(() => {
-    fetch("http://localhost:5000/api/products")
+    fetch(`${config.baseURL}/api/products`)
       .then((res) => res.json())
       .then((json) => setNotices(json));
       console.log(notices);

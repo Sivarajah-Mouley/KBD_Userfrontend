@@ -1,7 +1,7 @@
 
 
 const devConfig = {
-  baseURL: process.env.BASE_URL || 'http://localhost:5000',
+  baseURL: 'https://kbd.azurewebsites.net',
 }
 
 const prodConfig = {
